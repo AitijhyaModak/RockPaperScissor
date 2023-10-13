@@ -5,13 +5,12 @@ h1 {
     font-size: 4.5rem;
 }
 
-.invisible{
+.invisible {
     display: none;
 }
 
 div#rules {
     border: green solid;
-    width: 100%;
     font-size: 1.5rem;
 }
 
@@ -20,12 +19,57 @@ p.heading {
     text-align: center;
     font-size: 3rem;
 }
+
 button {
     font-size: 2.3rem;
     margin-top: 20px;
 }
+
 div#buttons {
     display: flex;
     justify-content: center;
     gap: 6%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    border: green solid 2px;
+}
+
+#player>h2 {
+    flex: none;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+#computer>h2 {
+    flex: none;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+div#player {
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+}
+div#computer {
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+}
+
+#game {
+    justify-content: space-around;
+}
+
+img {
+    margin-top: 20px;
 }
