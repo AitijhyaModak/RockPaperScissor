@@ -1,0 +1,31 @@
+h1 {
+    border: black solid;
+    text-align: center;
+    margin: 0;
+    font-size: 4.5rem;
+}
+
+.invisible{
+    display: none;
+}
+
+div#rules {
+    border: green solid;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+p.heading {
+    margin: 0;
+    text-align: center;
+    font-size: 3rem;
+}
+button {
+    font-size: 2.3rem;
+    margin-top: 20px;
+}
+div#buttons {
+    display: flex;
+    justify-content: center;
+    gap: 6%;
+}
