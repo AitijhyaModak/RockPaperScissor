@@ -21,31 +21,33 @@
 
     <div id="buttons" class="container">
         <button id = "rules">Rules</button>
-        <button>Play</button>
-        <button>Quit</button>
+        <button id = "play">Play</button>
     </div>
 
-    <div id = "game" class = "container">
+    <div id = "game" class = "container invisible">
         <div id = "player" class = "container">
             <h2>Player</h2>
-            <img src = "./assets/paper.png" alt = "image of scissor"  height = "150px">
-            <img src = "./assets/rock.png" alt = "image of rock" height = "150px">
-            <img src = "./assets/scissor.png" alt = "image of scissor" height = "150px">
+            <img src = "./assets/paper.png" alt = "image of scissor"  height = "150px" id = "paperimg1">
+            <img src = "./assets/rock.png" alt = "image of rock" height = "150px" id = "rockimg1">
+            <img src = "./assets/scissor.png" alt = "image of scissor" height = "150px" id = "scissorimg1">
         </div>
 
         <div id = "computer" class = "container">
             <h2>Computer</h2>
-            <img src = "./assets/paper.png" alt = "image of scissor"  height = "150px">
-            <img src = "./assets/rock.png" alt = "image of rock" height = "150px">
-            <img src = "./assets/scissor.png" alt = "image of scissor" height = "150px">
+            <img src = "./assets/paper.png" alt = "image of scissor"  height = "150px" id = "paperimg2">
+            <img src = "./assets/rock.png" alt = "image of rock" height = "150px" id = "rockimg2">
+            <img src = "./assets/scissor.png" alt = "image of scissor" height = "150px" id = "scissorimg2">
         </div>
     </div>
     
 
    
 
-    <h2>Players score</h2>
-    <h2>Computer score</h2>
-
-    <script src = "index.js"></script>
+    <h2 id = "playerscore" class = "invisible">Players score</h2>
+    <h2 id = "computerscore" class = "invisible">Computer score</h2>
+    
+    <h1 class = "message invisible" id = "wonmessage">Congratulations! You won</h1>
+    <h1 class = "message invisible" id = "lostmessage">Sorry! You lost</h1>
+    <button class = "button invisible" id = "playagainbutton">Play again</button>
+    <script src = "index.js" charset = 'utf-8'></script>
 </body>

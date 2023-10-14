@@ -5,9 +5,7 @@ h1 {
     font-size: 4.5rem;
 }
 
-.invisible {
-    display: none;
-}
+
 
 div#rules {
     border: green solid;
@@ -72,4 +70,12 @@ div#computer {
 
 img {
     margin-top: 20px;
+}
+
+.invisible {
+    display: none;
+}
+.pressed {
+    border: yellow 4px solid;
+    opacity: 50%;
 }
