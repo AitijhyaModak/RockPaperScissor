@@ -27,6 +27,7 @@ div#buttons {
     display: flex;
     justify-content: center;
     gap: 6%;
+    margin-top:20px;
 }
 
 .container {
@@ -63,13 +64,25 @@ div#computer {
     background-color: black;
     color: white;
 }
-
+h2#computerscore{
+    text-align: center;
+}
+h2#playerscore{
+    text-align: center;
+}
 #game {
     justify-content: space-around;
+    margin-top: 30px;
 }
 
 img {
     margin-top: 20px;
+}
+
+
+
+button#playagainbutton {
+    margin-left: 43.5%;
 }
 
 .invisible {

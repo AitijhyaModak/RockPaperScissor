@@ -24,6 +24,9 @@ play_button.addEventListener("click", onPlayClicked);
 function onPlayClicked() {
     document.getElementById("playerscore").classList.toggle("invisible");
     document.getElementById("computerscore").classList.toggle("invisible");
+    document.getElementById("wonmessage").classList.add("invisible");
+    document.getElementById("lostmessage").classList.add("invisible");
+    document.getElementById("playagainbutton").classList.add("invisible");
     game_box.classList.toggle("invisible");
     if (play_button.textContent === "Play") {
         play_button.textContent = "Quit";
@@ -114,9 +117,15 @@ function display_score() {
     document.querySelector("#computerscore").innerHTML = "Com puter's score:" + "&nbsp" + computer_score_text + String(computer_score);
 }
 function gamewin() {
-
+    player_score = 0;
+    computer_score = 0;
+    player_score_text = "";
+    computer_score_text = "";
     document.querySelector("#wonmessage").classList.toggle("invisible");
     document.querySelector("#playagainbutton").classList.toggle("invisible");
+    rock_player.removeEventListener("click",Game);
+    paper_player.removeEventListener("click",Game);
+    scissor_player.removeEventListener("click",Game);
 }
 function gamelost() {
     player_score = 0;
@@ -125,6 +134,9 @@ function gamelost() {
     computer_score_text = "";
     document.querySelector("#lostmessage").classList.toggle("invisible");
     document.querySelector("#playagainbutton").classList.toggle("invisible");
+    rock_player.removeEventListener("click",Game);
+    paper_player.removeEventListener("click",Game);
+    scissor_player.removeEventListener("click",Game);
 }
 
 document.querySelector("#playagainbutton").addEventListener("click", playagain);
@@ -137,5 +149,8 @@ function playagain() {
     player_score_text = "";
     computer_score_text = "";
     display_score();
+    rock_player.addEventListener("click",Game);
+    scissor_player.addEventListener("click",Game);
+    paper_player.addEventListener("click",Game);
 }
 
