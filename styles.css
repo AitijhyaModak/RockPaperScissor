@@ -15,13 +15,14 @@ h1 {
     font-size: 4.5rem;
     color: #432008;
     font-weight: 999;
-    text-shadow: -6px 5px 9px BLACK;
+    font-family: 'Tilt Neon', sans serif;
+    text-shadow: -3px 3px 14px BLACK;
 }
 
 
 
 div#rules {
-    background-color: rgba(256,56,55,.21);
+    background-color: rgba(256, 56, 55, .21);
     font-size: 1.5rem;
     margin-top: 30px;
     box-shadow: -4px 6px 20px 0px black;
@@ -40,6 +41,7 @@ button {
     margin-top: 20px;
     background: #e7cb81;
     border-radius: 9px;
+    box-shadow: -4px 4px 20px 0px black;
 }
 
 div#buttons {
@@ -59,6 +61,9 @@ div#buttons {
     width: 100%;
     margin: 0;
     text-align: center;
+    text-transform: lowercase;
+    font-family: 'Tilt Neon';
+    color: limegreen;
 }
 
 #computer>h2 {
@@ -66,6 +71,9 @@ div#buttons {
     width: 100%;
     margin: 0;
     text-align: center;
+    font-family: 'Tilt Neon';
+    text-transform: lowercase;
+    color: limegreen;
 }
 
 div#player {
@@ -74,6 +82,7 @@ div#player {
     margin-bottom: 10px;
     background-color: black;
     color: white;
+    border: 3px green solid;
 }
 
 div#computer {
@@ -82,6 +91,7 @@ div#computer {
     margin-bottom: 10px;
     background-color: black;
     color: white;
+    border: green solid 3px;
 }
 
 h2#computerscore {
@@ -101,7 +111,13 @@ img {
     margin-top: 20px;
 }
 
+#wonmessage {
+    color: #0d430d;
+}
 
+#lostmessage {
+    color: #5a0707;
+}
 
 button#playagainbutton {
     margin-left: 43.5%;
@@ -115,3 +131,4 @@ button#playagainbutton {
     border: yellow 4px solid;
     opacity: 50%;
 }
+

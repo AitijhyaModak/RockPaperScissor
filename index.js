@@ -114,7 +114,7 @@ function change_cursor(event) {
 function display_score() {
 
     document.querySelector("#playerscore").innerHTML = "Player's score: " + "&nbsp &nbsp &nbsp &nbsp" + player_score_text + String(player_score);
-    document.querySelector("#computerscore").innerHTML = "Com puter's score:" + "&nbsp" + computer_score_text + String(computer_score);
+    document.querySelector("#computerscore").innerHTML = "Computer's score:" + "&nbsp" + "&nbsp" + computer_score_text + String(computer_score);
 }
 function gamewin() {
     player_score = 0;
