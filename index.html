@@ -4,12 +4,16 @@
     <title>Rock Paper Scissor</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Young+Serif&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <h1>Rock🪨 Paper📄 Scissor✂️</h1>
-    <div id="rules" class = "invisible">
-        <p class="heading">Rules</p>
+    <div id="rules" class="invisible">
+        <p class="heading">RULES</p>
         <ul class="list">
             <li>Rock defeats Scissor.</li>
             <li>Scissor defeats Paper.</li>
@@ -20,34 +24,34 @@
     </div>
 
     <div id="buttons" class="container">
-        <button id = "rules">Rules</button>
-        <button id = "play">Play</button>
+        <button id="rules">Rules</button>
+        <button id="play">Play</button>
     </div>
 
-    <div id = "game" class = "container invisible">
-        <div id = "player" class = "container">
+    <div id="game" class="container invisible">
+        <div id="player" class="container">
             <h2>Player</h2>
-            <img src = "./assets/paper.png" alt = "image of scissor"  height = "150px" id = "paperimg1">
-            <img src = "./assets/rock.png" alt = "image of rock" height = "150px" id = "rockimg1">
-            <img src = "./assets/scissor.png" alt = "image of scissor" height = "150px" id = "scissorimg1">
+            <img src="./assets/paper.png" alt="image of scissor" height="150px" id="paperimg1">
+            <img src="./assets/rock.png" alt="image of rock" height="150px" id="rockimg1">
+            <img src="./assets/scissor.png" alt="image of scissor" height="150px" id="scissorimg1">
         </div>
 
-        <div id = "computer" class = "container">
+        <div id="computer" class="container">
             <h2>Computer</h2>
-            <img src = "./assets/paper.png" alt = "image of scissor"  height = "150px" id = "paperimg2">
-            <img src = "./assets/rock.png" alt = "image of rock" height = "150px" id = "rockimg2">
-            <img src = "./assets/scissor.png" alt = "image of scissor" height = "150px" id = "scissorimg2">
+            <img src="./assets/paper.png" alt="image of scissor" height="150px" id="paperimg2">
+            <img src="./assets/rock.png" alt="image of rock" height="150px" id="rockimg2">
+            <img src="./assets/scissor.png" alt="image of scissor" height="150px" id="scissorimg2">
         </div>
     </div>
-    
 
-   
 
-    <h2 id = "playerscore" class = "invisible">Players score</h2>
-    <h2 id = "computerscore" class = "invisible">Computer score</h2>
-    
-    <h1 class = "message invisible" id = "wonmessage">Congratulations! You won</h1>
-    <h1 class = "message invisible" id = "lostmessage">Sorry! You lost</h1>
-    <button class = "button invisible" id = "playagainbutton">Play again</button>
-    <script src = "index.js" charset = 'utf-8'></script>
+
+
+    <h2 id="playerscore" class="invisible">Players score</h2>
+    <h2 id="computerscore" class="invisible">Computer score</h2>
+
+    <h1 class="message invisible" id="wonmessage">Congratulations! You won</h1>
+    <h1 class="message invisible" id="lostmessage">Sorry! You lost</h1>
+    <button class="button invisible" id="playagainbutton">Play again</button>
+    <script src="index.js" charset='utf-8'></script>
 </body>

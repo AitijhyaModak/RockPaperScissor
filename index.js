@@ -101,8 +101,8 @@ function Game(event) {
     }
 
     display_score();
-    if (player_score === 5) gamewin();
-    if (computer_score === 5) gamelost();
+    if (player_score === 3) gamewin();
+    if (computer_score === 3) gamelost();
 }
 function highlight(element) {
     element.classList.toggle("pressed");
