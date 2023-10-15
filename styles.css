@@ -122,6 +122,12 @@ img {
 button#playagainbutton {
     margin-left: 43.5%;
 }
+footer{
+    position: fixed;
+    bottom:0;
+    left: 40%;
+    text-align: center;
+}
 
 .invisible {
     display: none;
